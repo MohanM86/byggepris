@@ -1,16 +1,19 @@
 import { Metadata } from "next";
 import CategoryPageTemplate from "@/components/sections/CategoryPageTemplate";
 import { projectTypes } from "@/data/prices";
-export const metadata: Metadata = { title: "Hva koster garasje? Priser for garasje", description: "Garasjepris 15 000-35 000 kr per m2. Se prisguide.", alternates: { canonical: "https://byggepris.no/garasje" } };
+import { FAQSchema, BreadcrumbSchema, ArticleSchema } from "@/components/seo/JsonLd";
+const faq = [
+  { question: "Hva koster en dobbeltgarasje?", answer: "En dobbeltgarasje på ca. 40 m² koster typisk 600 000-1 400 000 kr avhengig av standard og grunnforhold." },
+  { question: "Trenger jeg byggesøknad for garasje?", answer: "Garasjer under 50 m² kan ofte bygges uten søknad hvis de er frittliggende og i én etasje, men sjekk alltid med kommunen." },
+  { question: "Hva er billigst – mur eller tre?", answer: "Tregarasje er typisk 20-30% rimeligere enn murgarasje. Mur gir bedre brannmotstand og holdbarhet." },
+];
+export const metadata: Metadata = { title: "Hva koster garasje? Priser for garasjebygging", description: "Garasje koster 15 000-35 000 kr per m². Komplett prisguide.", alternates: { canonical: "https://byggepris.no/garasje" }, openGraph: { title: "Hva koster garasje?", description: "Typisk 15 000-35 000 kr per m².", url: "https://byggepris.no/garasje", type: "article" } };
 export default function Page() {
   const project = projectTypes.find((p) => p.slug === "garasje")!;
-  return (<CategoryPageTemplate project={project}
-    intro="En ny garasje i Norge koster typisk mellom 15 000 og 35 000 kr per m2. En standard dobbeltgarasje på 40 m2 koster 600 000-1 400 000 kroner."
-    description="Prisene varierer basert på standard, beliggenhet, materialvalg og kompleksitet. Bruk vår kalkulator for å få et mer nøyaktig estimat tilpasset ditt prosjekt."
-    costFactors={["Materialvalg og standardnivå","Beliggenhet og lokale markedsforhold","Prosjektets kompleksitet og omfang","Tilgjengelighet på håndverkere","Grunnforhold og eksisterende konstruksjon","VVS og elektrisk installasjon","Prosjekteringskostnader","Uforutsette utgifter og tillegg"]}
-    tips={["Innhent minst 3 tilbud fra kvalifiserte entreprenører.","Lag et detaljert budsjett med 10-15% buffer.","Planlegg grundig før du starter.","Vurder hva som gir mest verdi for pengene.","Sjekk referanser og sertifiseringer.","Vurder timing – vinter kan gi lavere priser."]}
-    faq={[{question:"Hva er typisk pris per m²?",answer:"Se priskortet øverst på siden for oppdaterte prisintervaller basert på ulike standardnivåer."},{question:"Hvor lang tid tar prosjektet?",answer:"Typisk varighet er angitt i priskortet. Faktisk tid avhenger av omfang og kompleksitet."},{question:"Bør jeg bruke totalentreprenør?",answer:"Totalentreprise gir forutsigbar pris og én kontaktperson, men kan koste noe mer enn å styre underentreprenører selv."}]}
-    relatedSlugs={["bygge-hus","tilbygg","hytte","oppussing"]}
-    relatedNames={["Bygge hus","Tilbygg","Hytte","Oppussing"]}
-  />);
+  return (<>
+    <BreadcrumbSchema items={[{ name: "Hjem", href: "/" }, { name: "Garasje", href: "/garasje" }]} />
+    <ArticleSchema title="Hva koster garasje?" description="Prisguide for garasjebygging i Norge." slug="garasje" />
+    <FAQSchema items={faq} />
+    <CategoryPageTemplate project={project} intro="En ny garasje i Norge koster typisk mellom 15 000 og 35 000 kr per m². En standard dobbeltgarasje på 40 m² koster 600 000-1 400 000 kroner." description="Garasjebygging er relativt enkelt sammenlignet med boligbygging, men prisen påvirkes av grunnforhold, materialvalg og om den skal varmes opp." costFactors={["Grunnforhold og fundamentering","Materialvalg (tre vs mur vs stål)","Oppvarming og isolasjon","Garasjeport-type og kvalitet","Elektrisk installasjon","Innvendig standard","Taktype og tekking","Avstand til bolig og tilkobling"]} tips={["Velg ferdiggarasje for lavere pris og raskere montering.","Sjekk byggeforskriftene for avstand til nabogrense.","Planlegg for fremtidig bruk (verksted, lager).","Isoler taket for å unngå kondens.","Velg seksjonalport for plass og komfort.","Legg strøm og belysning fra start."]} faq={faq} relatedSlugs={["bygge-hus","tilbygg","hytte","oppussing"]} relatedNames={["Bygge hus","Tilbygg","Hytte","Oppussing"]} />
+  </>);
 }

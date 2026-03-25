@@ -13,6 +13,7 @@ interface CategoryPageProps {
   project: ProjectType;
   intro: string;
   description: string;
+  content?: React.ReactNode;
   costFactors: string[];
   tips: string[];
   faq: { question: string; answer: string }[];
@@ -21,7 +22,7 @@ interface CategoryPageProps {
 }
 
 export default function CategoryPageTemplate({
-  project, intro, description, costFactors, tips, faq, relatedSlugs, relatedNames,
+  project, intro, description, content, costFactors, tips, faq, relatedSlugs, relatedNames,
 }: CategoryPageProps) {
   return (
     <main className="pt-20">
@@ -108,6 +109,17 @@ export default function CategoryPageTemplate({
           </FadeInUp>
         </div>
       </section>
+
+      {/* Deep content section */}
+      {content && (
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <FadeInUp>
+            <div className="prose-custom space-y-6 text-text-secondary leading-relaxed [&_h2]:font-display [&_h2]:font-extrabold [&_h2]:text-2xl [&_h2]:text-text-primary [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-lg [&_h3]:text-text-primary [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:mb-4 [&_ul]:space-y-2 [&_ul]:my-4 [&_li]:text-sm [&_li]:text-text-secondary [&_strong]:text-text-primary [&_strong]:font-semibold">
+              {content}
+            </div>
+          </FadeInUp>
+        </section>
+      )}
 
       {/* Price comparison table */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

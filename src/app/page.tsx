@@ -4,6 +4,7 @@ import PriceIntelligence from "@/components/sections/PriceIntelligence";
 import Calculator from "@/components/calculator/Calculator";
 import { TrustSection, ContentHub } from "@/components/sections/TrustAndContent";
 import FAQAccordion from "@/components/sections/FAQAccordion";
+import { FAQSchema } from "@/components/seo/JsonLd";
 
 const homeFAQ = [
   {
@@ -43,6 +44,7 @@ const homeFAQ = [
 export default function Home() {
   return (
     <main>
+      <FAQSchema items={homeFAQ} />
       <Hero />
       <CategoryGrid />
       <PriceIntelligence />

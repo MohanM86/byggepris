@@ -1,16 +1,19 @@
 import { Metadata } from "next";
 import CategoryPageTemplate from "@/components/sections/CategoryPageTemplate";
 import { projectTypes } from "@/data/prices";
-export const metadata: Metadata = { title: "Hva koster totalrenovering? Prisguide", description: "Totalrenovering 15 000-40 000 kr per m2. Komplett prisguide.", alternates: { canonical: "https://byggepris.no/totalrenovering" } };
+import { FAQSchema, BreadcrumbSchema, ArticleSchema } from "@/components/seo/JsonLd";
+const faq = [
+  { question: "Hva koster totalrenovering av hus?", answer: "Totalrenovering koster typisk 15 000-40 000 kr per m². For en bolig på 120 m² betyr det 1,8-4,8 millioner kr." },
+  { question: "Lønner det seg å totalrenovere?", answer: "Det lønner seg ofte hvis boligen har god beliggenhet og grunnstruktur. Sammenlign alltid med nybyggkostnad." },
+  { question: "Hvor lang tid tar totalrenovering?", answer: "En full totalrenovering tar typisk 3-7 måneder avhengig av boligens størrelse og omfang." },
+];
+export const metadata: Metadata = { title: "Hva koster totalrenovering? Komplett prisguide", description: "Totalrenovering koster 15 000-40 000 kr per m². Komplett prisguide med kalkulator.", alternates: { canonical: "https://byggepris.no/totalrenovering" }, openGraph: { title: "Hva koster totalrenovering?", description: "Typisk 15 000-40 000 kr per m².", url: "https://byggepris.no/totalrenovering", type: "article" } };
 export default function Page() {
   const project = projectTypes.find((p) => p.slug === "totalrenovering")!;
-  return (<CategoryPageTemplate project={project}
-    intro="Totalrenovering i Norge koster typisk mellom 15 000 og 40 000 kr per m2. For en bolig på 120 m2 betyr det 1,8 til 4,8 millioner kroner."
-    description="Prisene varierer basert på standard, beliggenhet, materialvalg og kompleksitet. Bruk vår kalkulator for å få et mer nøyaktig estimat tilpasset ditt prosjekt."
-    costFactors={["Materialvalg og standardnivå","Beliggenhet og lokale markedsforhold","Prosjektets kompleksitet og omfang","Tilgjengelighet på håndverkere","Grunnforhold og eksisterende konstruksjon","VVS og elektrisk installasjon","Prosjekteringskostnader","Uforutsette utgifter og tillegg"]}
-    tips={["Innhent minst 3 tilbud fra kvalifiserte entreprenører.","Lag et detaljert budsjett med 10-15% buffer.","Planlegg grundig før du starter.","Vurder hva som gir mest verdi for pengene.","Sjekk referanser og sertifiseringer.","Vurder timing – vinter kan gi lavere priser."]}
-    faq={[{question:"Hva er typisk pris per m²?",answer:"Se priskortet øverst på siden for oppdaterte prisintervaller basert på ulike standardnivåer."},{question:"Hvor lang tid tar prosjektet?",answer:"Typisk varighet er angitt i priskortet. Faktisk tid avhenger av omfang og kompleksitet."},{question:"Bør jeg bruke totalentreprenør?",answer:"Totalentreprise gir forutsigbar pris og én kontaktperson, men kan koste noe mer enn å styre underentreprenører selv."}]}
-    relatedSlugs={["oppussing","bad","kjokken","bygge-hus"]}
-    relatedNames={["Oppussing","Bad","Kjøkken","Bygge hus"]}
-  />);
+  return (<>
+    <BreadcrumbSchema items={[{ name: "Hjem", href: "/" }, { name: "Totalrenovering", href: "/totalrenovering" }]} />
+    <ArticleSchema title="Hva koster totalrenovering?" description="Prisguide for totalrenovering i Norge." slug="totalrenovering" />
+    <FAQSchema items={faq} />
+    <CategoryPageTemplate project={project} intro="Totalrenovering i Norge koster typisk mellom 15 000 og 40 000 kr per m². For en bolig på 120 m² betyr det 1,8 til 4,8 millioner kroner." description="En totalrenovering innebærer at hele boligen renoveres fra gulv til tak, inkludert bad, kjøkken, elektro, rør og overflater. Det er et omfattende prosjekt som krever god planlegging." costFactors={["Boligens alder og tilstand","Antall våtrom","Endring av planløsning og bærende vegger","Nytt elektrisk anlegg","Nye rør og VVS","Isolasjon og energioppgradering","Vinduer og dører","Utvendig arbeid"]} tips={["Lag en prioritert plan – hva MÅ gjøres vs hva er fint å ha.","Bruk totalentreprenør for bedre pris og koordinering.","Sett av minst 15% buffer for uforutsette funn.","Flytt ut under arbeidet for raskere og billigere gjennomføring.","Ta bilder og dokumenter alt før riving.","Sjekk om noe kan gjenbrukes."]} faq={faq} relatedSlugs={["oppussing","bad","kjokken","bygge-hus"]} relatedNames={["Oppussing","Bad","Kjøkken","Bygge hus"]} />
+  </>);
 }

@@ -1,16 +1,19 @@
 import { Metadata } from "next";
 import CategoryPageTemplate from "@/components/sections/CategoryPageTemplate";
 import { projectTypes } from "@/data/prices";
-export const metadata: Metadata = { title: "Hva koster flipping? Priser for boligflipping", description: "Flipping koster 5 000-20 000 kr per m2. Se guide.", alternates: { canonical: "https://byggepris.no/flipping" } };
+import { FAQSchema, BreadcrumbSchema, ArticleSchema } from "@/components/seo/JsonLd";
+const faq = [
+  { question: "Hva koster flipping av leilighet?", answer: "Flipping koster typisk 5 000-20 000 kr per m². For en 80 m² leilighet betyr det 400 000-1 600 000 kr." },
+  { question: "Lønner flipping seg?", answer: "Det kan lønne seg hvis du kjøper under markedspris og fokuserer på tiltak med høy avkastning (bad, kjøkken, maling). Husk å regne med skatt på gevinst." },
+  { question: "Hva bør jeg pusse opp ved flipping?", answer: "Prioriter bad, kjøkken, maling og gulv. Disse gir mest verdiøkning per investerte krone." },
+];
+export const metadata: Metadata = { title: "Hva koster flipping? Priser for boligflipping", description: "Flipping koster 5 000-20 000 kr per m². Guide for oppgradering før salg.", alternates: { canonical: "https://byggepris.no/flipping" }, openGraph: { title: "Hva koster flipping?", description: "Typisk 5 000-20 000 kr per m².", url: "https://byggepris.no/flipping", type: "article" } };
 export default function Page() {
   const project = projectTypes.find((p) => p.slug === "flipping")!;
-  return (<CategoryPageTemplate project={project}
-    intro="Flipping av bolig koster typisk 5 000-20 000 kr per m2. For en leilighet på 80 m2 betyr det 400 000-1 600 000 kroner avhengig av omfang."
-    description="Prisene varierer basert på standard, beliggenhet, materialvalg og kompleksitet. Bruk vår kalkulator for å få et mer nøyaktig estimat tilpasset ditt prosjekt."
-    costFactors={["Materialvalg og standardnivå","Beliggenhet og lokale markedsforhold","Prosjektets kompleksitet og omfang","Tilgjengelighet på håndverkere","Grunnforhold og eksisterende konstruksjon","VVS og elektrisk installasjon","Prosjekteringskostnader","Uforutsette utgifter og tillegg"]}
-    tips={["Innhent minst 3 tilbud fra kvalifiserte entreprenører.","Lag et detaljert budsjett med 10-15% buffer.","Planlegg grundig før du starter.","Vurder hva som gir mest verdi for pengene.","Sjekk referanser og sertifiseringer.","Vurder timing – vinter kan gi lavere priser."]}
-    faq={[{question:"Hva er typisk pris per m²?",answer:"Se priskortet øverst på siden for oppdaterte prisintervaller basert på ulike standardnivåer."},{question:"Hvor lang tid tar prosjektet?",answer:"Typisk varighet er angitt i priskortet. Faktisk tid avhenger av omfang og kompleksitet."},{question:"Bør jeg bruke totalentreprenør?",answer:"Totalentreprise gir forutsigbar pris og én kontaktperson, men kan koste noe mer enn å styre underentreprenører selv."}]}
-    relatedSlugs={["oppussing","bad","kjokken","totalrenovering"]}
-    relatedNames={["Oppussing","Bad","Kjøkken","Totalrenovering"]}
-  />);
+  return (<>
+    <BreadcrumbSchema items={[{ name: "Hjem", href: "/" }, { name: "Flipping", href: "/flipping" }]} />
+    <ArticleSchema title="Hva koster flipping?" description="Prisguide for boligflipping i Norge." slug="flipping" />
+    <FAQSchema items={faq} />
+    <CategoryPageTemplate project={project} intro="Flipping av bolig koster typisk 5 000-20 000 kr per m². For en leilighet på 80 m² betyr det 400 000-1 600 000 kroner avhengig av omfang." description="Flipping handler om å kjøpe en bolig, pusse opp strategisk, og selge med fortjeneste. Nøkkelen er å fokusere på tiltak som gir høyest verdiøkning i forhold til kostnaden." costFactors={["Boligens utgangstilstand","Hvilke rom som renoveres","Materialvalg og standard","Arbeidskostnad vs egeninnsats","Tidsbruk og holdekostnader","Meglerkostnader ved salg","Skatt på eventuell gevinst","Markedsforhold og timing"]} tips={["Fokuser på bad, kjøkken og overflater – det gir mest igjen.","Regn med alle kostnader inkl. megler, skatt og holdekostnader.","Ikke overinvester – tilpass standarden til området.","Maling og gulv gir mest visuell effekt for pengene.","Bruk profesjonell fotograf ved salg.","Ha en klar budsjett- og tidsplan før kjøp."]} faq={faq} relatedSlugs={["oppussing","bad","kjokken","totalrenovering"]} relatedNames={["Oppussing","Bad","Kjøkken","Totalrenovering"]} />
+  </>);
 }

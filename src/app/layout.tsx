@@ -22,11 +22,9 @@ export const metadata: Metadata = {
     url: "https://byggepris.no",
     siteName: "Byggepris.no",
     title: "Byggepris.no – Sjekk byggepris og oppussingskostnad i Norge",
-    description: "Norges mest komplette prisguide for bygging, renovering og oppussing. Gratis kalkulator og oppdaterte priser.",
+    description: "Norges mest komplette prisguide for bygging, renovering og oppussing.",
   },
-  twitter: {
-    card: "summary_large_image",
-  },
+  twitter: { card: "summary_large_image" },
   robots: {
     index: true,
     follow: true,
@@ -38,18 +36,25 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: "https://byggepris.no",
-  },
+  alternates: { canonical: "https://byggepris.no" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const jsonLd = {
+  const orgSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Byggepris.no",
+    url: "https://byggepris.no",
+    description: "Norges mest komplette prisguide for bygging, renovering og oppussing.",
+  };
+
+  const webSiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Byggepris.no",
     url: "https://byggepris.no",
     description: "Norges mest komplette prisguide for bygging, renovering og oppussing.",
+    inLanguage: "nb",
     potentialAction: {
       "@type": "SearchAction",
       target: "https://byggepris.no/byggepriser?q={search_term_string}",
@@ -62,9 +67,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+          as="style"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
       </head>
       <body className="font-body bg-bg-primary text-text-primary antialiased">
