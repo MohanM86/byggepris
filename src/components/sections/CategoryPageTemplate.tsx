@@ -6,7 +6,7 @@ import { type ProjectType, formatNOK, hiddenCosts } from "@/data/prices";
 import FAQAccordion from "@/components/sections/FAQAccordion";
 import {
   IconCalculator, IconRisk, IconCheck, IconSquareMeter,
-  IconBudget, IconTimeline, IconLocation,
+  IconBudget, IconTimeline, IconLocation, IconSavings,
 } from "@/components/icons";
 
 interface CategoryPageProps {
@@ -206,22 +206,41 @@ export default function CategoryPageTemplate({
       </section>
 
       {/* Tips */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <FadeInUp>
-          <h2 className="font-display font-extrabold text-2xl text-text-primary mb-6">
-            Tips for å spare penger på {project.name.toLowerCase()}
-          </h2>
-          <StaggerContainer className="space-y-3">
-            {tips.map((tip, i) => (
-              <motion.div key={i} variants={staggerChild} className="flex gap-3 items-start">
-                <span className="flex-shrink-0 w-6 h-6 rounded-full bg-accent-yellow/10 text-accent-yellow text-xs font-bold flex items-center justify-center mt-0.5">
-                  {i + 1}
-                </span>
-                <p className="text-text-secondary text-sm leading-relaxed">{tip}</p>
-              </motion.div>
-            ))}
-          </StaggerContainer>
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent-yellow/20 bg-accent-yellow/5 mb-3">
+              <IconSavings size={14} className="text-accent-yellow" />
+              <span className="text-accent-yellow text-xs font-semibold tracking-wide">SPARETIPS</span>
+            </div>
+            <h2 className="font-display font-extrabold text-2xl sm:text-3xl text-text-primary">
+              Slik sparer du penger på {project.name.toLowerCase()}
+            </h2>
+          </div>
         </FadeInUp>
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {tips.map((tip, i) => (
+            <motion.div
+              key={i}
+              variants={staggerChild}
+              className="group relative bg-bg-card border border-surface-border rounded-2xl p-5 hover:border-accent-yellow/30 transition-all duration-300 overflow-hidden"
+            >
+              {/* Hover glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-yellow/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-accent-yellow/10 border border-accent-yellow/20 text-accent-yellow text-sm font-display font-bold flex items-center justify-center group-hover:bg-accent-yellow/20 group-hover:shadow-glow-sm transition-all">
+                    {i + 1}
+                  </span>
+                  <div className="flex-1 h-px bg-gradient-to-r from-accent-yellow/20 to-transparent" />
+                </div>
+                <p className="text-text-secondary text-sm leading-relaxed group-hover:text-text-primary transition-colors">
+                  {tip}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </StaggerContainer>
       </section>
 
       {/* FAQ */}
