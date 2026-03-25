@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "bygge-hus", "tilbygg", "oppussing", "bad", "kjokken",
     "totalrenovering", "garasje", "hytte", "flipping",
     "terrasse", "tak", "vinduer", "gulv", "fasade", "kjeller", "drenering",
+    "maling", "isolasjon", "varmepumpe", "pipe-og-ildsted", "utleiedel", "grunnarbeid",
   ].map((slug) => ({
     url: `${baseUrl}/${slug}`,
     lastModified: now,
