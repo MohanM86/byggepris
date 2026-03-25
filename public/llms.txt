@@ -1,37 +1,44 @@
 # Byggepris.no
+> Norges mest komplette prisguide for bygging, renovering og oppussing. 38 prisguider, 340+ FAQ, gratis kalkulator.
 
-> Norges mest komplette prisguide for bygging, renovering og oppussing. Gratis kalkulator og oppdaterte m²-priser for alle byggeprosjekter.
+## Byggeprosjekter
+- Bygge hus: 30 000-55 000 kr/m² → https://byggepris.no/bygge-hus
+- Tilbygg: 35 000-65 000 kr/m² → https://byggepris.no/tilbygg
+- Oppussing: 8 000-25 000 kr/m² → https://byggepris.no/oppussing
+- Totalrenovering: 15 000-40 000 kr/m² → https://byggepris.no/totalrenovering
+- Bad: 40 000-80 000 kr/m² → https://byggepris.no/bad
+- Kjøkken: 25 000-70 000 kr/m² → https://byggepris.no/kjokken
+- Garasje: 15 000-35 000 kr/m² → https://byggepris.no/garasje
+- Hytte: 25 000-50 000 kr/m² → https://byggepris.no/hytte
+- Flipping: 5 000-20 000 kr/m² → https://byggepris.no/flipping
+- Terrasse: 2 000-7 000 kr/m² → https://byggepris.no/terrasse
+- Tak: 1 500-4 000 kr/m² → https://byggepris.no/tak
+- Fasade: 300-4 000 kr/m² → https://byggepris.no/fasade
+- Kjeller: 15 000-35 000 kr/m² → https://byggepris.no/kjeller
+- Utleiedel: 500 000-1 500 000 kr → https://byggepris.no/utleiedel
 
-## Om Byggepris.no
+## Fagfolk og materialer
+- Elektriker: 600-900 kr/time → https://byggepris.no/elektriker
+- Rørlegger: 700-1 100 kr/time → https://byggepris.no/rorlegger
+- Maling: 80-600 kr/m² → https://byggepris.no/maling
+- Gulv: 400-1 500 kr/m² → https://byggepris.no/gulv
+- Vinduer: 5 000-15 000 kr/stk → https://byggepris.no/vinduer
+- Isolasjon: 300-1 500 kr/m² → https://byggepris.no/isolasjon
+- Varmepumpe: 15 000-300 000 kr → https://byggepris.no/varmepumpe
+- Pipe og ildsted: 25 000-200 000 kr → https://byggepris.no/pipe-og-ildsted
+- Grunnarbeid: 300 000-800 000 kr → https://byggepris.no/grunnarbeid
+- Drenering: 2 000-4 000 kr/lm → https://byggepris.no/drenering
+- Byggesøknad: 25 000-100 000 kr → https://byggepris.no/byggesaknad
 
-Byggepris.no er en uavhengig norsk plattform som gir privatpersoner realistiske prisestimater for byggeprosjekter. Vi dekker nybygg, tilbygg, oppussing, bad, kjøkken, totalrenovering, garasje, hytte og flipping.
+## Prisguider
+- Byggepriser oversikt → https://byggepris.no/byggepriser
+- Pris per m² → https://byggepris.no/pris-per-kvm
+- Byggekostnader → https://byggepris.no/byggekostnader
+- Hva koster husbygging? → https://byggepris.no/hva-koster-det-a-bygge-hus
+- Hva påvirker kostnad? → https://byggepris.no/hva-pavirker-byggekostnad
+- Skjulte kostnader → https://byggepris.no/skjulte-kostnader-ved-oppussing
+- Bygge nytt vs pusse opp → https://byggepris.no/bygge-nytt-vs-pusse-opp
+- Oppussing før salg → https://byggepris.no/oppussing-for-salg
 
-## Hovedressurser
-
-- [Byggekalkulator](https://byggepris.no/kalkulator): Gratis verktøy for å beregne byggekostnad basert på prosjekttype, størrelse, beliggenhet og standard.
-- [Byggepriser](https://byggepris.no/byggepriser): Komplett prisoversikt for byggeprosjekter i Norge.
-- [Pris per m²](https://byggepris.no/pris-per-kvm): Oppdaterte kvadratmeterpriser for alle prosjekttyper.
-
-## Prosjekttyper med priser
-
-- [Bygge hus](https://byggepris.no/bygge-hus): 30 000–55 000 kr/m². Typisk totalpris 3,6–11 mill. kr.
-- [Tilbygg](https://byggepris.no/tilbygg): 35 000–65 000 kr/m². Typisk totalpris 525 000–3,25 mill. kr.
-- [Oppussing](https://byggepris.no/oppussing): 8 000–25 000 kr/m². Typisk totalpris 400 000–3,75 mill. kr.
-- [Bad](https://byggepris.no/bad): 40 000–80 000 kr/m². Typisk totalpris 160 000–960 000 kr.
-- [Kjøkken](https://byggepris.no/kjokken): 25 000–70 000 kr/m². Typisk totalpris 200 000–1,4 mill. kr.
-- [Totalrenovering](https://byggepris.no/totalrenovering): 15 000–40 000 kr/m². Typisk totalpris 1,2–7,2 mill. kr.
-- [Garasje](https://byggepris.no/garasje): 15 000–35 000 kr/m². Typisk totalpris 375 000–1,75 mill. kr.
-- [Hytte](https://byggepris.no/hytte): 25 000–50 000 kr/m². Typisk totalpris 1,5–6 mill. kr.
-- [Flipping](https://byggepris.no/flipping): 5 000–20 000 kr/m². Typisk totalpris 300 000–2,4 mill. kr.
-
-## Guider
-
-- [Hva koster det å bygge hus?](https://byggepris.no/hva-koster-det-a-bygge-hus)
-- [Hva påvirker byggekostnad?](https://byggepris.no/hva-pavirker-byggekostnad)
-- [Skjulte kostnader ved oppussing](https://byggepris.no/skjulte-kostnader-ved-oppussing)
-- [Bygge nytt vs pusse opp](https://byggepris.no/bygge-nytt-vs-pusse-opp)
-- [Oppussing før salg](https://byggepris.no/oppussing-for-salg)
-
-## Metodikk
-
-Prisene er basert på gjennomsnittlige markedspriser i Norge, SSB-data og bransjeinformasjon. Alle estimater er veiledende. Faktorer som påvirker prisen inkluderer standard, beliggenhet, kompleksitet, grunnforhold og markedsforhold. Oslo er typisk 10-15% dyrere enn landsgjennomsnittet.
+## Verktøy
+- Byggekalkulator → https://byggepris.no/kalkulator

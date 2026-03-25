@@ -13,22 +13,42 @@ const navLinks = [
       { href: "/bygge-hus", label: "Bygge hus" },
       { href: "/tilbygg", label: "Tilbygg" },
       { href: "/oppussing", label: "Oppussing" },
+      { href: "/totalrenovering", label: "Totalrenovering" },
       { href: "/bad", label: "Bad" },
       { href: "/kjokken", label: "Kjøkken" },
-      { href: "/totalrenovering", label: "Totalrenovering" },
       { href: "/garasje", label: "Garasje" },
       { href: "/hytte", label: "Hytte" },
+      { href: "/terrasse", label: "Terrasse" },
+      { href: "/tak", label: "Tak" },
+      { href: "/fasade", label: "Fasade" },
+      { href: "/kjeller", label: "Kjeller" },
       { href: "/flipping", label: "Flipping" },
+      { href: "/utleiedel", label: "Utleiedel" },
+    ],
+  },
+  {
+    label: "Fagfolk og materialer",
+    children: [
+      { href: "/elektriker", label: "Elektriker" },
+      { href: "/rorlegger", label: "Rørlegger" },
+      { href: "/maling", label: "Maling" },
+      { href: "/gulv", label: "Gulv" },
+      { href: "/vinduer", label: "Vinduer" },
+      { href: "/isolasjon", label: "Isolasjon" },
+      { href: "/varmepumpe", label: "Varmepumpe" },
+      { href: "/pipe-og-ildsted", label: "Pipe og ildsted" },
+      { href: "/grunnarbeid", label: "Grunnarbeid" },
+      { href: "/drenering", label: "Drenering" },
+      { href: "/byggesaknad", label: "Byggesøknad" },
     ],
   },
   { href: "/pris-per-kvm", label: "Pris per m²" },
-  { href: "/om-byggepris", label: "Om oss" },
 ];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -68,14 +88,14 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-1">
               {navLinks.map((link) =>
                 link.children ? (
-                  <div key={link.label} className="relative" onMouseEnter={() => setDropdownOpen(true)} onMouseLeave={() => setDropdownOpen(false)}>
+                  <div key={link.label} className="relative" onMouseEnter={() => setOpenDropdown(link.label)} onMouseLeave={() => setOpenDropdown(null)}>
                     <button className="px-3 py-2 text-sm text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1">
                       {link.label}
-                      <IconChevronRight size={14} className={`transition-transform duration-200 ${dropdownOpen ? "rotate-90" : ""}`} />
+                      <IconChevronRight size={14} className={`transition-transform duration-200 ${openDropdown === link.label ? "rotate-90" : ""}`} />
                     </button>
                     <AnimatePresence>
-                      {dropdownOpen && (
-                        <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }} transition={{ duration: 0.2 }} className="absolute top-full left-0 mt-1 w-56 glass rounded-xl p-2 shadow-elevated">
+                      {openDropdown === link.label && (
+                        <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }} transition={{ duration: 0.2 }} className="absolute top-full left-0 mt-1 w-56 glass rounded-xl p-2 shadow-elevated max-h-[70vh] overflow-y-auto">
                           {link.children.map((child) => (
                             <Link key={child.href} href={child.href} className="block px-3 py-2 text-sm text-text-secondary hover:text-accent-yellow hover:bg-surface-hover rounded-lg transition-all">{child.label}</Link>
                           ))}

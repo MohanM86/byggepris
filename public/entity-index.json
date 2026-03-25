@@ -1,181 +1,35 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Byggepris.no – Norsk byggepris-entiteter",
-  "description": "Komplett oversikt over byggeprosjekter, prisdata og kostnadsinformasjon for det norske markedet.",
+  "name": "Byggepris.no — Norges byggeprisguide",
+  "description": "Komplett prisoversikt for bygging, renovering og oppussing i Norge. 38 prisguider med 340+ FAQ.",
   "url": "https://byggepris.no",
-  "numberOfItems": 9,
+  "numberOfItems": 25,
   "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "Service",
-        "name": "Bygge hus",
-        "description": "Nybygg av enebolig eller rekkehus i Norge. Typisk pris 30 000-55 000 kr per m².",
-        "url": "https://byggepris.no/bygge-hus",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "30000",
-          "highPrice": "55000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "Service",
-        "name": "Tilbygg",
-        "description": "Utvide boligen med nytt areal. Typisk pris 35 000-65 000 kr per m².",
-        "url": "https://byggepris.no/tilbygg",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "35000",
-          "highPrice": "65000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "Service",
-        "name": "Oppussing",
-        "description": "Generell oppussing av bolig. Typisk pris 8 000-25 000 kr per m².",
-        "url": "https://byggepris.no/oppussing",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "8000",
-          "highPrice": "25000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "item": {
-        "@type": "Service",
-        "name": "Baderomsrenovering",
-        "description": "Nytt bad eller baderomsrenovering. Typisk pris 40 000-80 000 kr per m².",
-        "url": "https://byggepris.no/bad",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "40000",
-          "highPrice": "80000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "item": {
-        "@type": "Service",
-        "name": "Kjøkkenrenovering",
-        "description": "Nytt kjøkken eller kjøkkenrenovering. Typisk pris 25 000-70 000 kr per m².",
-        "url": "https://byggepris.no/kjokken",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "25000",
-          "highPrice": "70000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "item": {
-        "@type": "Service",
-        "name": "Totalrenovering",
-        "description": "Komplett renovering fra gulv til tak. Typisk pris 15 000-40 000 kr per m².",
-        "url": "https://byggepris.no/totalrenovering",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "15000",
-          "highPrice": "40000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "item": {
-        "@type": "Service",
-        "name": "Garasjebygging",
-        "description": "Bygge ny garasje eller carport. Typisk pris 15 000-35 000 kr per m².",
-        "url": "https://byggepris.no/garasje",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "15000",
-          "highPrice": "35000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "item": {
-        "@type": "Service",
-        "name": "Hyttebygging",
-        "description": "Bygge fritidsbolig eller hytte. Typisk pris 25 000-50 000 kr per m².",
-        "url": "https://byggepris.no/hytte",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "25000",
-          "highPrice": "50000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "item": {
-        "@type": "Service",
-        "name": "Boligflipping",
-        "description": "Oppgradering av bolig før salg for profitt. Typisk pris 5 000-20 000 kr per m².",
-        "url": "https://byggepris.no/flipping",
-        "provider": { "@type": "Organization", "name": "Byggepris.no" },
-        "areaServed": { "@type": "Country", "name": "Norge" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "5000",
-          "highPrice": "20000",
-          "priceCurrency": "NOK",
-          "unitText": "per m²"
-        }
-      }
-    }
+    {"@type": "ListItem", "position": 1, "item": {"@type": "Service", "name": "Bygge hus", "url": "https://byggepris.no/bygge-hus", "offers": {"@type": "AggregateOffer", "lowPrice": 30000, "highPrice": 55000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 2, "item": {"@type": "Service", "name": "Tilbygg", "url": "https://byggepris.no/tilbygg", "offers": {"@type": "AggregateOffer", "lowPrice": 35000, "highPrice": 65000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 3, "item": {"@type": "Service", "name": "Bad", "url": "https://byggepris.no/bad", "offers": {"@type": "AggregateOffer", "lowPrice": 40000, "highPrice": 80000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 4, "item": {"@type": "Service", "name": "Kjøkken", "url": "https://byggepris.no/kjokken", "offers": {"@type": "AggregateOffer", "lowPrice": 25000, "highPrice": 70000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 5, "item": {"@type": "Service", "name": "Oppussing", "url": "https://byggepris.no/oppussing", "offers": {"@type": "AggregateOffer", "lowPrice": 8000, "highPrice": 25000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 6, "item": {"@type": "Service", "name": "Totalrenovering", "url": "https://byggepris.no/totalrenovering", "offers": {"@type": "AggregateOffer", "lowPrice": 15000, "highPrice": 40000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 7, "item": {"@type": "Service", "name": "Garasje", "url": "https://byggepris.no/garasje", "offers": {"@type": "AggregateOffer", "lowPrice": 15000, "highPrice": 35000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 8, "item": {"@type": "Service", "name": "Hytte", "url": "https://byggepris.no/hytte", "offers": {"@type": "AggregateOffer", "lowPrice": 25000, "highPrice": 50000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 9, "item": {"@type": "Service", "name": "Flipping", "url": "https://byggepris.no/flipping", "offers": {"@type": "AggregateOffer", "lowPrice": 5000, "highPrice": 20000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 10, "item": {"@type": "Service", "name": "Terrasse", "url": "https://byggepris.no/terrasse", "offers": {"@type": "AggregateOffer", "lowPrice": 2000, "highPrice": 7000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 11, "item": {"@type": "Service", "name": "Tak", "url": "https://byggepris.no/tak", "offers": {"@type": "AggregateOffer", "lowPrice": 1500, "highPrice": 4000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 12, "item": {"@type": "Service", "name": "Fasade", "url": "https://byggepris.no/fasade", "offers": {"@type": "AggregateOffer", "lowPrice": 300, "highPrice": 4000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 13, "item": {"@type": "Service", "name": "Kjeller", "url": "https://byggepris.no/kjeller", "offers": {"@type": "AggregateOffer", "lowPrice": 15000, "highPrice": 35000, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 14, "item": {"@type": "Service", "name": "Utleiedel", "url": "https://byggepris.no/utleiedel", "offers": {"@type": "AggregateOffer", "lowPrice": 500000, "highPrice": 1500000, "priceCurrency": "NOK"}}},
+    {"@type": "ListItem", "position": 15, "item": {"@type": "Service", "name": "Gulv", "url": "https://byggepris.no/gulv", "offers": {"@type": "AggregateOffer", "lowPrice": 400, "highPrice": 1500, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 16, "item": {"@type": "Service", "name": "Vinduer", "url": "https://byggepris.no/vinduer", "offers": {"@type": "AggregateOffer", "lowPrice": 5000, "highPrice": 15000, "priceCurrency": "NOK", "unitText": "per stk"}}},
+    {"@type": "ListItem", "position": 17, "item": {"@type": "Service", "name": "Maling", "url": "https://byggepris.no/maling", "offers": {"@type": "AggregateOffer", "lowPrice": 80, "highPrice": 600, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 18, "item": {"@type": "Service", "name": "Isolasjon", "url": "https://byggepris.no/isolasjon", "offers": {"@type": "AggregateOffer", "lowPrice": 300, "highPrice": 1500, "priceCurrency": "NOK", "unitText": "per m²"}}},
+    {"@type": "ListItem", "position": 19, "item": {"@type": "Service", "name": "Varmepumpe", "url": "https://byggepris.no/varmepumpe", "offers": {"@type": "AggregateOffer", "lowPrice": 15000, "highPrice": 300000, "priceCurrency": "NOK"}}},
+    {"@type": "ListItem", "position": 20, "item": {"@type": "Service", "name": "Pipe og ildsted", "url": "https://byggepris.no/pipe-og-ildsted", "offers": {"@type": "AggregateOffer", "lowPrice": 25000, "highPrice": 200000, "priceCurrency": "NOK"}}},
+    {"@type": "ListItem", "position": 21, "item": {"@type": "Service", "name": "Grunnarbeid", "url": "https://byggepris.no/grunnarbeid", "offers": {"@type": "AggregateOffer", "lowPrice": 300000, "highPrice": 800000, "priceCurrency": "NOK"}}},
+    {"@type": "ListItem", "position": 22, "item": {"@type": "Service", "name": "Drenering", "url": "https://byggepris.no/drenering", "offers": {"@type": "AggregateOffer", "lowPrice": 2000, "highPrice": 4000, "priceCurrency": "NOK", "unitText": "per løpemeter"}}},
+    {"@type": "ListItem", "position": 23, "item": {"@type": "Service", "name": "Elektriker", "url": "https://byggepris.no/elektriker", "offers": {"@type": "AggregateOffer", "lowPrice": 600, "highPrice": 900, "priceCurrency": "NOK", "unitText": "per time"}}},
+    {"@type": "ListItem", "position": 24, "item": {"@type": "Service", "name": "Rørlegger", "url": "https://byggepris.no/rorlegger", "offers": {"@type": "AggregateOffer", "lowPrice": 700, "highPrice": 1100, "priceCurrency": "NOK", "unitText": "per time"}}},
+    {"@type": "ListItem", "position": 25, "item": {"@type": "Service", "name": "Byggesøknad", "url": "https://byggepris.no/byggesaknad", "offers": {"@type": "AggregateOffer", "lowPrice": 25000, "highPrice": 100000, "priceCurrency": "NOK"}}}
   ]
 }
