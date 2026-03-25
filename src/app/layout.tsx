@@ -37,6 +37,11 @@ export const metadata: Metadata = {
     },
   },
   alternates: { canonical: "https://byggepris.no" },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -65,6 +70,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nb">
       <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#E8B931" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

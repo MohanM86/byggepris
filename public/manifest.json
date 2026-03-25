@@ -1,0 +1,16 @@
+{
+  "name": "Byggepris.no",
+  "short_name": "Byggepris",
+  "description": "Norges mest komplette prisguide for bygging, renovering og oppussing",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C0C0E",
+  "theme_color": "#E8B931",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
