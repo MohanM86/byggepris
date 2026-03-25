@@ -10,40 +10,33 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: "#0C0C0E",
-          deep: "#060608",
-          card: "#141418",
-          elevated: "#1A1A20",
-          surface: "#22222A",
+          primary: "#0C0C0E",
+          secondary: "#131316",
+          tertiary: "#1A1A1F",
+          card: "#1E1E24",
+          elevated: "#252530",
         },
         accent: {
-          DEFAULT: "#E8B931",
-          light: "#F2D264",
-          dark: "#C49A1A",
-          muted: "#A8882E",
-          glow: "#E8B93140",
+          yellow: "#E8B931",
+          gold: "#D4A017",
+          amber: "#C4922A",
+          warm: "#F5D04E",
+          glow: "#FFDD44",
         },
-        gold: {
-          DEFAULT: "#D4A82A",
-          light: "#ECC94B",
-          muted: "#8B7730",
+        text: {
+          primary: "#F2F0ED",
+          secondary: "#A8A5A0",
+          tertiary: "#6B6862",
+          muted: "#4A4845",
         },
         steel: {
-          DEFAULT: "#5B7B9A",
-          light: "#7B9BB8",
-          dark: "#3D5A75",
+          400: "#7B8FA3",
+          500: "#5A7089",
+          600: "#3D5570",
         },
-        neutral: {
-          50: "#F5F5F7",
-          100: "#E8E8EC",
-          200: "#D1D1D8",
-          300: "#B0B0BA",
-          400: "#8A8A96",
-          500: "#6B6B78",
-          600: "#4D4D58",
-          700: "#35353E",
-          800: "#24242C",
-          900: "#18181E",
+        surface: {
+          border: "#2A2A32",
+          hover: "#2E2E38",
         },
       },
       fontFamily: {
@@ -51,25 +44,25 @@ const config: Config = {
         body: ['"DM Sans"', "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },
-      borderRadius: {
-        "2xl": "1rem",
-        "3xl": "1.5rem",
+      backgroundImage: {
+        "gradient-yellow": "linear-gradient(135deg, #E8B931, #D4A017)",
+        "glow-yellow": "radial-gradient(circle, rgba(232,185,49,0.15) 0%, transparent 70%)",
       },
       boxShadow: {
-        glow: "0 0 40px rgba(232, 185, 49, 0.15)",
-        "glow-sm": "0 0 20px rgba(232, 185, 49, 0.1)",
-        "glow-lg": "0 0 80px rgba(232, 185, 49, 0.2)",
-        card: "0 2px 12px rgba(0, 0, 0, 0.3)",
-        "card-hover": "0 8px 32px rgba(0, 0, 0, 0.5)",
+        glow: "0 0 30px rgba(232,185,49,0.15)",
+        "glow-sm": "0 0 15px rgba(232,185,49,0.1)",
+        "glow-lg": "0 0 60px rgba(232,185,49,0.2)",
+        card: "0 4px 30px rgba(0,0,0,0.3)",
+        elevated: "0 8px 40px rgba(0,0,0,0.4)",
       },
       animation: {
         "pulse-glow": "pulseGlow 3s ease-in-out infinite",
-        "float": "float 6s ease-in-out infinite",
+        float: "float 6s ease-in-out infinite",
       },
       keyframes: {
         pulseGlow: {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(232, 185, 49, 0.1)" },
-          "50%": { boxShadow: "0 0 40px rgba(232, 185, 49, 0.25)" },
+          "0%, 100%": { boxShadow: "0 0 20px rgba(232,185,49,0.1)" },
+          "50%": { boxShadow: "0 0 40px rgba(232,185,49,0.25)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0)" },
