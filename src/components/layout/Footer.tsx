@@ -38,8 +38,17 @@ export default function Footer() {
         </div>
         <div className="py-6 border-t border-surface-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded bg-gradient-to-br from-accent-yellow to-accent-gold flex items-center justify-center"><span className="text-bg-primary font-display font-bold text-xs">B</span></div>
-            <span className="font-display font-semibold text-sm text-text-secondary">Byggepris.no</span>
+            <div className="w-6 h-6 rounded border border-accent-gold/60 bg-bg-card flex items-center justify-center relative overflow-hidden">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+                <path d="M12 4L20 10" stroke="#E8B931" strokeWidth="1.8" strokeLinecap="round"/>
+                <path d="M12 4L4 10" stroke="#E8B931" strokeWidth="1.8" strokeLinecap="round"/>
+                <line x1="5" y1="10" x2="5" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
+                <line x1="19" y1="10" x2="19" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
+                <line x1="5" y1="20" x2="19" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
+                <text x="12" y="17" textAnchor="middle" dominantBaseline="central" fontFamily="system-ui" fontWeight="900" fontSize="10" fill="#E8B931">B</text>
+              </svg>
+            </div>
+            <span className="font-display font-semibold text-sm text-text-secondary">Bygge<span className="text-accent-yellow">pris</span><span className="text-accent-amber">.no</span></span>
           </div>
           <p className="text-xs text-text-muted">© {new Date().getFullYear()} Byggepris.no. Prisestimater er veiledende og erstatter ikke profesjonell rådgivning.</p>
         </div>
