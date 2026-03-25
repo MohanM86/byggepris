@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryPages = [
     "bygge-hus", "tilbygg", "oppussing", "bad", "kjokken",
     "totalrenovering", "garasje", "hytte", "flipping",
+    "terrasse", "tak", "vinduer", "gulv", "fasade", "kjeller", "drenering",
   ].map((slug) => ({
     url: `${baseUrl}/${slug}`,
     lastModified: now,
@@ -25,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const infoPages = [
     "hva-koster-det-a-bygge-hus", "pris-per-kvm", "hva-pavirker-byggekostnad",
     "skjulte-kostnader-ved-oppussing", "bygge-nytt-vs-pusse-opp", "oppussing-for-salg",
+    "elektriker", "rorlegger", "byggesaknad",
   ].map((slug) => ({
     url: `${baseUrl}/${slug}`,
     lastModified: now,
