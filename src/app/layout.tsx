@@ -23,8 +23,9 @@ export const metadata: Metadata = {
     siteName: "Byggepris.no",
     title: "Byggepris.no – Sjekk byggepris og oppussingskostnad i Norge",
     description: "Norges mest komplette prisguide for bygging, renovering og oppussing.",
+    images: [{ url: "https://byggepris.no/og-image.png", width: 1200, height: 630, alt: "Byggepris.no – Norges byggeprisguide" }],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", images: ["https://byggepris.no/og-image.png"] },
   robots: {
     index: true,
     follow: true,
