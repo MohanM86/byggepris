@@ -40,15 +40,15 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded border border-accent-gold/60 bg-bg-card flex items-center justify-center relative overflow-hidden">
               <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
-                <path d="M12 4L20 10" stroke="#E8B931" strokeWidth="1.8" strokeLinecap="round"/>
-                <path d="M12 4L4 10" stroke="#E8B931" strokeWidth="1.8" strokeLinecap="round"/>
-                <line x1="5" y1="10" x2="5" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
-                <line x1="19" y1="10" x2="19" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
+                <path d="M12 3L20 9" stroke="#E8B931" strokeWidth="1.8" strokeLinecap="round"/>
+                <path d="M12 3L4 9" stroke="#E8B931" strokeWidth="1.8" strokeLinecap="round"/>
+                <line x1="5" y1="9" x2="5" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
+                <line x1="19" y1="9" x2="19" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
                 <line x1="5" y1="20" x2="19" y2="20" stroke="#F2F0ED" strokeWidth="1" opacity="0.5"/>
-                <text x="12" y="17" textAnchor="middle" dominantBaseline="central" fontFamily="system-ui" fontWeight="900" fontSize="10" fill="#E8B931">B</text>
+                <text x="12" y="15" textAnchor="middle" dominantBaseline="central" fontFamily="system-ui" fontWeight="900" fontSize="10" fill="#E8B931">B</text>
               </svg>
             </div>
-            <span className="font-display font-semibold text-sm text-text-secondary">Bygge<span className="text-accent-yellow">pris</span><span className="text-accent-amber">.no</span></span>
+            <span className="font-display font-semibold text-sm text-text-secondary">Bygge<span className="text-accent-yellow">pris.no</span></span>
           </div>
           <p className="text-xs text-text-muted">© {new Date().getFullYear()} Byggepris.no. Prisestimater er veiledende og erstatter ikke profesjonell rådgivning.</p>
         </div>

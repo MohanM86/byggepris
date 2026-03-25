@@ -53,17 +53,16 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-2 group">
               <div className="w-8 h-8 rounded-lg border border-accent-gold/80 bg-bg-card flex items-center justify-center relative overflow-hidden">
                 <svg viewBox="0 0 32 32" width="32" height="32" fill="none" className="absolute inset-0">
-                  <rect x="5" y="12" width="22" height="17" fill="#E8B931" opacity="0.04"/>
-                  <path d="M16 5L28 14" stroke="#E8B931" strokeWidth="2.2" strokeLinecap="round"/>
-                  <path d="M16 5L4 14" stroke="#E8B931" strokeWidth="2.2" strokeLinecap="round"/>
-                  <line x1="6" y1="14" x2="6" y2="28" stroke="#F2F0ED" strokeWidth="1.3" opacity="0.55"/>
-                  <line x1="26" y1="14" x2="26" y2="28" stroke="#F2F0ED" strokeWidth="1.3" opacity="0.55"/>
+                  <rect x="5" y="11" width="22" height="18" fill="#E8B931" opacity="0.04"/>
+                  <path d="M16 4L28 13" stroke="#E8B931" strokeWidth="2.2" strokeLinecap="round"/>
+                  <path d="M16 4L4 13" stroke="#E8B931" strokeWidth="2.2" strokeLinecap="round"/>
+                  <line x1="6" y1="13" x2="6" y2="28" stroke="#F2F0ED" strokeWidth="1.3" opacity="0.55"/>
+                  <line x1="26" y1="13" x2="26" y2="28" stroke="#F2F0ED" strokeWidth="1.3" opacity="0.55"/>
                   <line x1="6" y1="28" x2="26" y2="28" stroke="#F2F0ED" strokeWidth="1.3" opacity="0.55"/>
-                  <text x="16" y="23" textAnchor="middle" dominantBaseline="central" fontFamily="system-ui" fontWeight="900" fontSize="14" fill="#E8B931">B</text>
+                  <text x="16" y="21" textAnchor="middle" dominantBaseline="central" fontFamily="system-ui" fontWeight="900" fontSize="14" fill="#E8B931">B</text>
                 </svg>
               </div>
-              <span className="font-display font-extrabold text-lg text-text-primary group-hover:text-accent-yellow transition-colors">Bygge<span className="text-accent-yellow">pris</span></span>
-              <span className="text-accent-amber font-display font-light text-lg">.no</span>
+              <span className="font-display font-extrabold text-lg group-hover:text-accent-yellow transition-colors"><span className="text-text-primary">Bygge</span><span className="text-accent-yellow">pris</span><span className="text-accent-yellow">.no</span></span>
             </Link>
 
             <div className="hidden lg:flex items-center gap-1">
