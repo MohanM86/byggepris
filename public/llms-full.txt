@@ -1,0 +1,109 @@
+# Byggepris.no – Komplett prisdatabase
+
+> Norges mest komplette prisguide for bygging, renovering og oppussing.
+
+## Prisdatabase – Alle prosjekttyper
+
+### Bygge hus (nybygg enebolig)
+- Pris per m²: 30 000–55 000 kr
+- Normal standard: ca. 40 000 kr/m²
+- Typisk størrelse: 120–200 m²
+- Typisk totalpris: 3 600 000–11 000 000 kr
+- Typisk byggetid: 30–52 uker
+- Inkluderer: råbygg, innredning, VVS, elektro
+- Inkluderer ikke: tomt, grunnarbeid, prosjektering
+
+### Tilbygg
+- Pris per m²: 35 000–65 000 kr
+- Normal standard: ca. 45 000 kr/m²
+- Typisk størrelse: 15–50 m²
+- Typisk totalpris: 525 000–3 250 000 kr
+- Typisk byggetid: 8–20 uker
+
+### Oppussing (generell)
+- Pris per m²: 8 000–25 000 kr
+- Normal standard: ca. 15 000 kr/m²
+- Typisk størrelse: 50–150 m²
+- Typisk totalpris: 400 000–3 750 000 kr
+- Typisk byggetid: 4–16 uker
+
+### Baderomsrenovering
+- Pris per m²: 40 000–80 000 kr
+- Normal standard: ca. 55 000 kr/m²
+- Typisk størrelse: 4–12 m²
+- Typisk totalpris: 160 000–960 000 kr
+- Typisk byggetid: 3–8 uker
+
+### Kjøkkenrenovering
+- Pris per m²: 25 000–70 000 kr
+- Normal standard: ca. 40 000 kr/m²
+- Typisk størrelse: 8–20 m²
+- Typisk totalpris: 200 000–1 400 000 kr
+- Typisk byggetid: 2–6 uker
+
+### Totalrenovering
+- Pris per m²: 15 000–40 000 kr
+- Normal standard: ca. 25 000 kr/m²
+- Typisk størrelse: 80–180 m²
+- Typisk totalpris: 1 200 000–7 200 000 kr
+- Typisk byggetid: 12–30 uker
+
+### Garasje
+- Pris per m²: 15 000–35 000 kr
+- Normal standard: ca. 22 000 kr/m²
+- Typisk størrelse: 25–50 m²
+- Typisk totalpris: 375 000–1 750 000 kr
+- Typisk byggetid: 4–10 uker
+
+### Hytte / fritidsbolig
+- Pris per m²: 25 000–50 000 kr
+- Normal standard: ca. 35 000 kr/m²
+- Typisk størrelse: 60–120 m²
+- Typisk totalpris: 1 500 000–6 000 000 kr
+- Typisk byggetid: 16–40 uker
+
+### Flipping (oppgradering før salg)
+- Pris per m²: 5 000–20 000 kr
+- Normal standard: ca. 12 000 kr/m²
+- Typisk størrelse: 60–120 m²
+- Typisk totalpris: 300 000–2 400 000 kr
+- Typisk byggetid: 4–12 uker
+
+## Regionale prisforskjeller
+
+- Oslo: +15% over landsgjennomsnittet
+- Tromsø: +10%
+- Stavanger: +8%
+- Bergen: +5%
+- Trondheim: +3%
+- Drammen: +2%
+- Kristiansand: gjennomsnitt
+- Østlandet (annet): -2%
+- Vestlandet (annet): -3%
+- Midt-Norge: -5%
+- Sørlandet: -4%
+- Nord-Norge: +5%
+
+## Standardnivåer
+
+- Enkel standard: 0,8x basispris. Rimelige materialer, enkel utførelse.
+- Normal standard: 1,0x basispris. Gode materialer, solid håndverk.
+- Høy standard: 1,3x basispris. Premium materialer, topp kvalitet.
+- Luksuriøs: 1,7x basispris. Eksklusive materialer, arkitekt-design.
+
+## Typiske skjulte kostnader
+
+- Prosjektering og arkitekt: 5–10% av totalpris
+- Byggesøknad og gebyr: 1–3%
+- Grunnarbeid og tomt: 5–15%
+- Uforutsette kostnader: 10–15%
+- Oppvarming under bygging: 1–3%
+- Tilkobling vann og avløp: 2–5%
+- Elektrisk installasjon ekstra: 3–8%
+- Maling og overflatebehandling: 2–5%
+
+## Kontakt
+
+Nettside: https://byggepris.no
+Type: Uavhengig prisguide for byggeprosjekter i Norge
+Språk: Norsk (bokmål)
