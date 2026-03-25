@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import CategoryPageTemplate from "@/components/sections/CategoryPageTemplate";
 import { projectTypes } from "@/data/prices";
 import { FAQSchema, BreadcrumbSchema, ArticleSchema } from "@/components/seo/JsonLd";
+import { TilbyggContent } from "@/components/content/TilbyggContent";
 const faq = [
   { question: "Hva koster et tilbygg på 30 m²?", answer: "Et tilbygg på 30 m² koster typisk 1-2 millioner kr. Normal standard ligger rundt 1,2-1,5 millioner kr." },
   { question: "Trenger jeg byggesøknad for tilbygg?", answer: "Ja, de fleste tilbygg krever byggesøknad. Mindre tilbygg under 15 m² kan meldes som tiltak uten ansvarsrett." },
@@ -14,6 +15,6 @@ export default function Page() {
     <BreadcrumbSchema items={[{ name: "Hjem", href: "/" }, { name: "Tilbygg", href: "/tilbygg" }]} />
     <ArticleSchema title="Hva koster tilbygg?" description="Prisguide for tilbygg i Norge." slug="tilbygg" />
     <FAQSchema items={faq} />
-    <CategoryPageTemplate project={project} intro="Tilbygg i Norge koster typisk mellom 35 000 og 65 000 kr per m². For et tilbygg på 30 m² betyr det en totalkostnad på ca. 1-2 millioner kroner." description="Et tilbygg er ofte den mest kostnadseffektive måten å få mer plass. Prisen avhenger av romtype, grunnforhold og eksisterende konstruksjon." costFactors={["Grunnarbeid og fundamentering","Tilkobling til eksisterende konstruksjon","Romtype (bad/kjøkken koster mer enn stue)","Om bærende vegger må endres","Takform og tilpasning","Byggesøknad og regulering","Graving og drenering","VVS og elektrisk installasjon"]} tips={["Planlegg tilbygget som naturlig forlengelse av boligen.","Sjekk reguleringsplan og byggegrenser først.","Unngå komplisert takløsning.","Bruk samme materialer som eksisterende bolig.","Vurder kjeller under tilbygget.","Innhent tilbud fra tilbyggspesialister."]} faq={faq} relatedSlugs={["bygge-hus","oppussing","totalrenovering","garasje"]} relatedNames={["Bygge hus","Oppussing","Totalrenovering","Garasje"]} />
+    <CategoryPageTemplate project={project} intro="Tilbygg i Norge koster typisk mellom 35 000 og 65 000 kr per m². For et tilbygg på 30 m² betyr det en totalkostnad på ca. 1-2 millioner kroner." content={<TilbyggContent />} description="Et tilbygg er ofte den mest kostnadseffektive måten å få mer plass. Prisen avhenger av romtype, grunnforhold og eksisterende konstruksjon." costFactors={["Grunnarbeid og fundamentering","Tilkobling til eksisterende konstruksjon","Romtype (bad/kjøkken koster mer enn stue)","Om bærende vegger må endres","Takform og tilpasning","Byggesøknad og regulering","Graving og drenering","VVS og elektrisk installasjon"]} tips={["Planlegg tilbygget som naturlig forlengelse av boligen.","Sjekk reguleringsplan og byggegrenser først.","Unngå komplisert takløsning.","Bruk samme materialer som eksisterende bolig.","Vurder kjeller under tilbygget.","Innhent tilbud fra tilbyggspesialister."]} faq={faq} relatedSlugs={["bygge-hus","oppussing","totalrenovering","garasje"]} relatedNames={["Bygge hus","Oppussing","Totalrenovering","Garasje"]} />
   </>);
 }
