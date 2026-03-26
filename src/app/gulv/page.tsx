@@ -5,18 +5,18 @@ import { IconCalculator, IconCheck } from "@/components/icons";
 import { FAQSchema, BreadcrumbSchema, ArticleSchema } from "@/components/seo/JsonLd";
 
 const faq = [
-  { question: "Hva koster nytt gulv per m²?", answer: "Nytt gulv koster 400–1 500 kr per m² inkl. legging. Vinyl koster 400–700 kr, laminat 500–800 kr, parkett 700–1 500 kr og fliser 800–2 000 kr. For en hel bolig på 100 m² betyr det 40 000–150 000 kr." },
-  { question: "Hva koster parkett?", answer: "Parkett koster 700–1 500 kr per m² inkl. legging. Trestav koster 700–1 000 kr, plank 900–1 500 kr og massivtre 1 200–2 000 kr. For en stue på 30 m² betyr det 21 000–45 000 kr komplett." },
+  { question: "Hva koster nytt gulv per m²?", answer: "Nytt gulv koster 400–1 500 kr per m² inkl. legging. Vinyl koster 400–700 kr, laminat 500–800 kr, parkett 700–1 500 kr og fliser 800–2 000 kr. For en bolig på 100 m² betyr det 40 000–150 000 kr." },
+  { question: "Hva koster parkett?", answer: "Parkett koster 700–1 500 kr per m² inkl. legging. Trestav koster 700–1 000 kr, plank 900–1 500 kr og massivtre 1 200–2 000 kr. For en stue på 30 m² betyr det 21 000–45 000 kr." },
   { question: "Er parkett bedre enn laminat?", answer: "Parkett varer 30–50 år og kan slipes 3–5 ganger. Laminat varer 10–20 år og kan ikke slipes. Parkett øker boligverdien mer. Laminat er 40–50 % billigere og enklere å legge selv." },
-  { question: "Hva koster vinylgulv?", answer: "Vinyl med klikkplanker koster 400–700 kr per m² inkl. legging. Det er vannfast, slitesterkt og lett å legge. Godt alternativ for bad, kjøkken og entré. Topper listen for prisbevisste." },
+  { question: "Hva koster vinylgulv?", answer: "Vinyl med klikkplanker koster 400–700 kr per m² inkl. legging. Vannfast, slitesterkt og lett å legge. Godt alternativ for bad, kjøkken og gang. Topper listen for prisbevisste." },
   { question: "Kan man legge gulv selv?", answer: "Ja. Laminat og vinyl med klikkfeste er enkle prosjekter å gjøre selv. Du sparer 200–500 kr per m² i arbeidskostnad. Parkett kan legges flytende. Fliser bør legges av fagfolk, særlig i våtrom." },
-  { question: "Hva koster gulvsliping?", answer: "Sliping av parkett koster 200–400 kr per m² inkl. lakk eller olje. For en stue på 30 m² betyr det 6 000–12 000 kr. Det er mye billigere enn nytt gulv og gir like godt resultat." },
+  { question: "Hva koster gulvsliping?", answer: "Sliping av parkett koster 200–400 kr per m² inkl. lakk eller olje. For en stue på 30 m² betyr det 6 000–12 000 kr. Mye billigere enn nytt gulv og gir like godt resultat." },
   { question: "Hva koster flislegging?", answer: "Fliser inkl. legging koster 800–2 000 kr per m². Materialet koster 300–1 500 kr per m² og legging 500–1 000 kr per m². For badegulv på 6 m² betyr det 5 000–12 000 kr." },
-  { question: "Hva koster gulvvarme?", answer: "Elektrisk gulvvarme koster 500–1 200 kr per m². Vannbåren gulvvarme koster 800–1 500 kr per m². Bad på 6 m² med elektrisk varme koster 3 000–7 200 kr. Stue på 25 m² koster 12 500–30 000 kr." },
-  { question: "Kan man legge nytt gulv oppå gammelt?", answer: "Ja, ofte. Vinyl og laminat kan legges over eksisterende gulv hvis det er jevnt. Parkett kan legges flytende med dampsperre over. Ujevnt gulv må avrettes først, noe som koster 50–150 kr per m²." },
-  { question: "Hvilket gulv er best for bad?", answer: "Fliser er best for bad fordi de er vannfaste og slitesterke. Vinyl er et godt alternativ som er billigere og varmere under føttene. Parkett og laminat bør ikke brukes på bad." },
-  { question: "Hva koster det å fjerne gammelt gulv?", answer: "Fjerning av gammelt gulv koster 50–200 kr per m² avhengig av type. Teppe koster 50 kr, vinyl 80 kr, parkett 100 kr og fliser 150–200 kr. For 80 m² betyr det 4 000–16 000 kr." },
-  { question: "Hvilket gulv øker boligverdien mest?", answer: "Parkett i eik plank gir høyest verdiøkning. Deretter god vinyl. Laminat gir begrenset verdiøkning. Fliser øker verdien i våtrom. Teppe reduserer verdien i Norge." },
+  { question: "Hva koster gulvvarme?", answer: "Elektrisk gulvvarme koster 500–1 200 kr per m². Vannbåren gulvvarme koster 800–1 500 kr per m². Bad på 6 m² med elektrisk varme koster 3 000–7 200 kr." },
+  { question: "Kan man legge nytt gulv oppå gammelt?", answer: "Ja, ofte. Vinyl og laminat kan legges over eksisterende gulv hvis det er jevnt. Parkett kan legges flytende med dampsperre. Ujevnt gulv må avrettes først, noe som koster 50–150 kr per m²." },
+  { question: "Hvilket gulv er best for bad?", answer: "Fliser er best for bad fordi de er vannfaste og slitesterke. Vinyl er et godt alternativ, billigere og varmere under føttene. Parkett og laminat bør ikke brukes på bad." },
+  { question: "Hva koster det å fjerne gammelt gulv?", answer: "Fjerning av gammelt gulv koster 50–200 kr per m² avhengig av type. Teppe 50 kr, vinyl 80 kr, parkett 100 kr og fliser 150–200 kr. For 80 m² betyr det 4 000–16 000 kr." },
+  { question: "Hvilket gulv øker boligverdien mest?", answer: "Parkett i eik plank gir høyest verdiøkning. Deretter god vinyl. Laminat gir begrenset verdiøkning. Fliser øker verdien i våtrom. Teppe reduserer verdien i norske boliger." },
 ];
 
 export const metadata: Metadata = {
@@ -37,8 +37,21 @@ export default function Page() {
           <nav className="text-sm text-text-muted mb-6"><Link href="/" className="hover:text-accent-yellow">Hjem</Link> / <span className="text-text-secondary">Gulv</span></nav>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent-yellow/20 bg-accent-yellow/5 mb-4"><span className="text-accent-yellow text-xs font-semibold">OPPDATERT 2026</span></div>
           <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-text-primary mb-4">Hva koster nytt gulv?</h1>
-          <p className="text-lg text-text-secondary mb-8">Nytt gulv koster typisk <strong className="text-text-primary">400–1 500 kr per m²</strong> inkl. legging. For en hel bolig på 100 m² betyr det 40 000–150 000 kr. Vinyl er rimeligst, parkett gir mest verdi og fliser er best for våtrom.</p>
+          <p className="text-lg text-text-secondary mb-8">Nytt gulv koster typisk <strong className="text-text-primary">400–1 500 kr per m²</strong> inkl. legging. For en bolig på 100 m² betyr det 40 000–150 000 kr. Vinyl er rimeligst, parkett gir mest verdi og fliser er best for våtrom.</p>
 
+          {/* PRISBAROMETER */}
+          <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Prisbarometer</h2>
+          <div className="bg-bg-card border border-surface-border rounded-2xl p-6 my-6">
+            <p className="text-xs text-text-muted mb-3 uppercase tracking-wider font-semibold">Pris per m² inkl. legging</p>
+            <div className="flex items-stretch gap-0 rounded-xl overflow-hidden mb-4">
+              <div className="flex-1 bg-emerald-500/10 py-3 px-4 text-center border-r border-surface-border"><p className="text-xs text-text-muted mb-1">Billig</p><p className="font-mono font-bold text-sm text-emerald-400">Under 600 kr</p></div>
+              <div className="flex-1 bg-accent-yellow/10 py-3 px-4 text-center border-r border-surface-border"><p className="text-xs text-text-muted mb-1">Normal</p><p className="font-mono font-bold text-sm text-accent-yellow">600–1 000 kr</p></div>
+              <div className="flex-1 bg-red-500/10 py-3 px-4 text-center"><p className="text-xs text-text-muted mb-1">Dyrt</p><p className="font-mono font-bold text-sm text-red-400">Over 1 000 kr</p></div>
+            </div>
+            <p className="text-xs text-text-tertiary">Vinyl og laminat i nedre sjikt. Parkett i midten. Massivtre og naturstein i øvre.</p>
+          </div>
+
+          {/* MATERIALSAMMENLIGNING */}
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Materialsammenligning</h2>
           <div className="bg-bg-card border border-surface-border rounded-2xl overflow-hidden my-6">
             <table className="w-full text-sm"><thead><tr className="text-left text-xs text-text-muted uppercase tracking-wider border-b border-surface-border"><th className="px-4 py-3">Type</th><th className="px-4 py-3">Pris per m²</th><th className="px-4 py-3">Levetid</th><th className="px-4 py-3">Gjør selv</th><th className="px-4 py-3">Verdiøkning</th></tr></thead>
@@ -50,6 +63,7 @@ export default function Page() {
             </table>
           </div>
 
+          {/* REGNEKSEMPEL */}
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Regneksempel: Nytt gulv i hele boligen (100 m²)</h2>
           <div className="bg-bg-card border border-surface-border rounded-2xl p-6 my-6">
             <div className="grid sm:grid-cols-3 gap-6">
@@ -77,6 +91,7 @@ export default function Page() {
             </div>
           </div>
 
+          {/* SELV VS FAGFOLK */}
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Legge gulv selv eller bruke fagfolk</h2>
           <div className="grid sm:grid-cols-2 gap-4 my-6">
             <div className="bg-bg-card border border-surface-border rounded-xl p-5">
@@ -89,17 +104,50 @@ export default function Page() {
             </div>
           </div>
 
+          {/* SJEKKLISTE + RØDE FLAGG */}
+          <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Slik velger du riktig gulvlegger</h2>
+          <div className="bg-bg-card border border-surface-border rounded-2xl p-6 my-6">
+            <p className="font-display font-bold text-text-primary mb-3">Sjekkliste før du bestiller:</p>
+            <div className="space-y-2 mb-6">{["Be om fast pris per m² inkl. materialer og legging","Sjekk om avretting er inkludert i prisen","Avklar hvem som fjerner gammelt gulv og hva det koster","Spør etter referanser fra lignende prosjekter","Sjekk at firmaet har forsikring","Avtal skriftlig garantitid på arbeidet"].map(t=>(<div key={t} className="flex gap-2 text-sm text-text-secondary"><IconCheck size={14} className="flex-shrink-0 text-accent-yellow mt-0.5"/><span>{t}</span></div>))}</div>
+            <div className="border-t border-surface-border pt-4">
+              <p className="font-display font-bold text-red-400 mb-3">Røde flagg:</p>
+              <div className="space-y-2">{["Vil ikke gi fast pris","Avretting er ikke med i tilbudet (vanlig kostnadsfelle)","Ingen skriftlig avtale eller garanti","Anbefaler billigste materiale uten å spørre om behov","Vil ikke vise referanser","Krever full betaling før arbeidet er ferdig"].map(t=>(<div key={t} className="flex gap-2 text-sm text-text-secondary"><span className="flex-shrink-0 text-red-400 mt-0.5 text-xs">✕</span><span>{t}</span></div>))}</div>
+            </div>
+          </div>
+
+          {/* VANLIGE FEIL */}
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">5 vanlige feil</h2>
           <div className="space-y-4 my-6">
             {[
               {t:"Hopper over avretting",d:"Ujevnt underlag gir knirk, gap og kortere levetid. Avretting koster 50–150 kr per m² og er alltid verdt det."},
               {t:"Velger kun etter pris",d:"Billigste vinyl varer 5–8 år. Middels kvalitet varer 15–20 år. Regn pris per år, da er ofte parkett billigst i lengden."},
-              {t:"Glemmer å aklimatisere",d:"Parkett og laminat må aklimatiseres 48 timer i rommet før legging. Ellers kan det bule seg eller få gap."},
-              {t:"Feil gulv på bad",d:"Laminat og parkett tåler ikke fukt. Bruk fliser eller vinyl på bad, kjøkken og entré."},
+              {t:"Glemmer å aklimatisere",d:"Parkett og laminat må ligge i rommet 48 timer før legging. Ellers kan det bule seg eller få gap mellom plankene."},
+              {t:"Feil gulv på bad",d:"Laminat og parkett tåler ikke fukt. Bruk fliser eller vinyl på bad, kjøkken og gang."},
               {t:"Legger ikke dampsperre",d:"Dampsperre er nødvendig under alle flytende gulv på betong. Uten får du fuktskader. Koster bare 20–40 kr per m²."},
             ].map((item,i)=>(<div key={i} className="bg-bg-card border border-surface-border rounded-xl p-5"><div className="flex items-center gap-3 mb-2"><span className="w-7 h-7 rounded-lg bg-accent-yellow/10 border border-accent-yellow/20 text-accent-yellow text-xs font-display font-bold flex items-center justify-center">{i+1}</span><h3 className="font-display font-bold text-text-primary">{item.t}</h3></div><p className="text-sm text-text-secondary ml-10">{item.d}</p></div>))}
           </div>
 
+          {/* SESONG */}
+          <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Sesong og ventetid</h2>
+          <div className="bg-bg-card border border-surface-border rounded-xl p-6 my-6">
+            <div className="space-y-3 text-sm">
+              {[["Januar–mars","Kort ventetid, gode priser","text-text-primary"],["April–juni","Økt etterspørsel, 1–3 ukers ventetid","text-accent-amber"],["Juli–august","Ferie, varierende tilgjengelighet","text-text-primary"],["September–november","Høyest etterspørsel, 2–4 uker","text-red-400"],["Desember","Rolig, men mange tar juleferie","text-text-primary"]].map(([m,d,c])=>(<div key={m} className="flex justify-between"><span className="text-text-secondary">{m}</span><span className={c}>{d}</span></div>))}
+            </div>
+            <p className="text-xs text-text-tertiary mt-4">Gulvlegging er innvendig arbeid og kan gjøres hele året. Prisene er lavest i vinterhalvåret.</p>
+          </div>
+
+          {/* SPARETIPS */}
+          <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Slik sparer du penger på gulv</h2>
+          <div className="space-y-3 text-text-secondary mb-6">
+            <p><strong className="text-text-primary">Legg vinyl eller laminat selv.</strong> Klikkfeste gjør det enkelt. Du sparer 200–500 kr per m² i arbeidskostnad, altså 20 000–50 000 kr for en bolig på 100 m².</p>
+            <p><strong className="text-text-primary">Fjern gammelt gulv selv.</strong> Riving av teppe, vinyl eller parkett er enkelt og sparer 4 000–16 000 kr for 80 m².</p>
+            <p><strong className="text-text-primary">Vurder sliping av parkett.</strong> Har du parkett som ser slitt ut? Sliping koster 200–400 kr per m², nytt gulv koster 700–1 500 kr per m². Spar opptil 75 %.</p>
+            <p><strong className="text-text-primary">Kjøp rester og kampanjevarer.</strong> Mange gulvbutikker selger restpartier og utgående modeller med 30–50 % rabatt. Perfekt for enkeltrom.</p>
+            <p><strong className="text-text-primary">Bestill legging i rolig sesong.</strong> Vinter og tidlig vår gir lavere priser og raskere oppstart.</p>
+            <p><strong className="text-text-primary">Sammenlign tre tilbud.</strong> Prisforskjellen mellom gulvleggere kan være 20–30 % for samme jobb. Sjekk hva som er inkludert, spesielt avretting.</p>
+          </div>
+
+          {/* RELATERTE */}
           <div className="mt-10 mb-6">
             <h2 className="font-display font-bold text-xl text-text-primary mb-4">Relaterte prosjekter</h2>
             <div className="flex flex-wrap gap-3">
