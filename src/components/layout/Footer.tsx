@@ -52,6 +52,9 @@ export default function Footer() {
           </div>
           <p className="text-xs text-text-muted">© {new Date().getFullYear()} Byggepris.no. Prisestimater er veiledende og erstatter ikke profesjonell rådgivning.</p>
         </div>
+        <div className="py-4 border-t border-surface-border/50 flex items-center justify-center">
+          <p className="text-xs text-text-muted">En tjeneste fra <a href="https://it-firma.no" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent-yellow transition-colors">IT-Firma</a></p>
+        </div>
       </div>
     </footer>
   );
