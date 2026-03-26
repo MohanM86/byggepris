@@ -8,7 +8,7 @@ const faq = [
   { question: "Hva koster drenering rundt hus?", answer: "Drenering rundt et helt hus koster typisk 80 000–200 000 kr. Per løpemeter koster det 2 000–4 000 kr. For en husvegg på 10 meter betyr det 20 000–40 000 kr. Inkluderer graving, drensrør, singel og tilbakefylling." },
   { question: "Når må man drenere?", answer: "Når du opplever fukt i kjeller, synlig vann langs grunnmur, mugg eller lukt i kjeller, saltutslag på vegg eller sprekker i grunnmur. Drenering har vanligvis levetid på 20–30 år, så hus eldre enn dette bør sjekkes." },
   { question: "Kan man drenere selv?", answer: "Graving med maskin bør gjøres av fagfolk. Du kan spare noe ved å gjøre tilbakefylling og overflatearbeid selv. Feil drenering kan gjøre vondt verre med vannskader, så dette er ikke stedet å spare." },
-  { question: "Hva koster graving for drenering?", answer: "Graving koster 800–2 000 kr per time for maskin med fører. For én husvegg tar graving typisk 1–2 dager. Tilkomst påvirker prisen mye, trang tilkomst kan doble kostnaden." },
+  { question: "Hva koster graving for drenering?", answer: "Graving koster 800–2 000 kr per time for maskin med fører. For en husvegg tar graving typisk 1–2 dager. Tilkomst påvirker prisen mye, trang tilkomst kan doble kostnaden." },
   { question: "Hva inkluderer drenering?", answer: "Komplett drenering inkluderer graving langs grunnmur, ny fuktsikring og membran på mur, drensrør i riktig fall, singel rundt rør, geotekstil, tilkobling til avløp eller infiltrasjon og tilbakefylling." },
   { question: "Hva koster fuktsikring av kjeller?", answer: "Fuktsikring utvendig koster 1 500–3 000 kr per m² vegg inkl. graving. Innvendig fuktsikring koster 800–2 000 kr per m² men løser bare symptomene. Utvendig er alltid best." },
   { question: "Må man søke for drenering?", answer: "Nei, drenering krever normalt ikke byggesøknad. Men tilkobling til kommunalt overvannsnett kan kreve tillatelse. Sjekk med kommunen hvis du endrer avrenning mot nabotomt." },
@@ -39,7 +39,7 @@ export default function Page() {
         <div className="bg-bg-card border border-surface-border rounded-2xl overflow-hidden my-6">
           <table className="w-full text-sm"><thead><tr className="text-left text-xs text-text-muted uppercase tracking-wider border-b border-surface-border"><th className="px-5 py-3">Jobb</th><th className="px-5 py-3">Typisk pris</th></tr></thead>
             <tbody className="divide-y divide-surface-border">
-              {[["Drenering per løpemeter","2 000–4 000 kr"],["Drenering én husvegg (10 m)","20 000–40 000 kr"],["Drenering rundt helt hus","80 000–200 000 kr"],["Fuktsikring grunnmur per m²","1 500–3 000 kr"],["Ny drenskum per stk","5 000–15 000 kr"],["Graving per time (maskin)","800–2 000 kr"],["Innvendig fuktsikring per m²","800–2 000 kr"],["Radonsperre (tillegg)","200–500 kr/m²"]].map(([j,p])=>(
+              {[["Drenering per løpemeter","2 000–4 000 kr"],["Drenering en husvegg (10 m)","20 000–40 000 kr"],["Drenering rundt helt hus","80 000–200 000 kr"],["Fuktsikring grunnmur per m²","1 500–3 000 kr"],["Ny drenskum per stk","5 000–15 000 kr"],["Graving per time (maskin)","800–2 000 kr"],["Innvendig fuktsikring per m²","800–2 000 kr"],["Radonsperre (tillegg)","200–500 kr/m²"]].map(([j,p])=>(
                 <tr key={j} className="hover:bg-bg-tertiary/30"><td className="px-5 py-3 text-text-primary font-medium">{j}</td><td className="px-5 py-3 font-mono text-accent-yellow">{p}</td></tr>
               ))}
             </tbody>

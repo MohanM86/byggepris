@@ -78,7 +78,7 @@ export default function Page() {
 
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Slik sparer du penger</h2>
           <div className="space-y-3 text-text-secondary mb-6">
-            <p><strong className="text-text-primary">Bytt alle samtidig.</strong> Du får bedre stordriftsrabatt og betaler bare én gang for montering. 15 vinduer samlet er 10–15 % billigere enn å bytte tre om gangen.</p>
+            <p><strong className="text-text-primary">Bytt alle samtidig.</strong> Du får bedre stordriftsrabatt og betaler bare en gang for montering. 15 vinduer samlet er 10–15 % billigere enn å bytte tre om gangen.</p>
             <p><strong className="text-text-primary">Velg standardstørrelser.</strong> Spesialmål koster 30–50 % mer. Hvis mulig, tilpass hullet til standardvindu i stedet for omvendt.</p>
             <p><strong className="text-text-primary">Søk Enova om støtte.</strong> Du kan få tilbake deler av kostnaden hvis du oppgraderer til energiklasse A eller bedre.</p>
             <p><strong className="text-text-primary">Sammenlign tre tilbud.</strong> Prisforskjellen mellom vindusprodusenter kan være 20–30 % for tilsvarende kvalitet. Be om tilbud fra minst tre leverandører.</p>

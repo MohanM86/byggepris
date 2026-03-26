@@ -17,7 +17,7 @@ const homeFAQ = [
   },
   {
     question: "Hva er typisk pris per m² for nybygg?",
-    answer: "Typisk pris per kvadratmeter for nybygg i Norge ligger mellom 30 000 og 55 000 kr, avhengig av standard. Enkel standard starter fra ca. 25 000 kr/m², mens luksuriøs standard kan overstige 60 000 kr/m². Prisen varierer også mellom regioner.",
+    answer: "Typisk pris per kvadratmeter for nybygg i Norge ligger mellom 30 000 og 55 000 kr, avhengig av standard. Enkel standard starter fra ca. 25 000 kr/m², mens luksusstandard kan overstige 60 000 kr/m². Prisen varierer også mellom regioner.",
   },
   {
     question: "Hva koster det å pusse opp bad?",

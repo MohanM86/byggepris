@@ -9,7 +9,7 @@ const faq = [
   { question: "Hva koster elektriker på bad?", answer: "Komplett elektrikerarbeid på bad koster typisk 15 000–35 000 kr. Inkluderer nye kurser, gulvvarme (5 000–10 000 kr), spots, ventilasjon og jordfeilvern. Om det elektriske anlegget må oppgraderes, kan det koste mer." },
   { question: "Hva koster ny sikringstavle?", answer: "Ny sikringstavle koster 15 000–40 000 kr installert. Prisen avhenger av antall kurser og om hovedinntak må oppgraderes. Anbefales sterkt i boliger med gamle skrusikringer — disse er brannfarlige." },
   { question: "Hva koster det å trekke nytt elektrisk anlegg?", answer: "Komplett nytt anlegg: leilighet 60 m²: 50 000–120 000 kr. Hus 150 m²: 100 000–250 000 kr. Inkluderer ny tavle, kurser, uttak, belysning og jordfeilvern. Ofte nødvendig i boliger bygget før 1980." },
-  { question: "Hva koster det å sette inn stikkontakt?", answer: "Ny stikkontakt koster 2 000–5 000 kr inkl. arbeid. Pris avhenger av om det trengs ny kurs eller bare forlengelse. Oppstartsgebyr gjør at det lønner seg å samle flere småjobber i én bestilling." },
+  { question: "Hva koster det å sette inn stikkontakt?", answer: "Ny stikkontakt koster 2 000–5 000 kr inkl. arbeid. Pris avhenger av om det trengs ny kurs eller bare forlengelse. Oppstartsgebyr gjør at det lønner seg å samle flere småjobber i en bestilling." },
   { question: "Hva koster elbil-lader installasjon?", answer: "Elbil-lader hjemme koster 10 000–25 000 kr ferdig installert. Enkel lading fra dedikert kurs: 3 000–5 000 kr. I borettslag med felles løsning kan prisen per enhet være lavere. Krever alltid autorisert elektriker." },
   { question: "Kan man gjøre elektrisk arbeid selv?", answer: "Nei. I Norge er alt elektrisk installasjonsarbeid lovpålagt utført av autorisert installasjonsvirksomhet. Du kan bytte pærer, sikringer og dekklokk. Alt med ledninger, uttak eller kurser krever fagfolk. Ulovlig arbeid gir brannfare og forsikringsproblemer." },
   { question: "Hva er dyrest av elektriker og rørlegger?", answer: "Rørlegger er normalt dyrere: 700–1 100 kr/time vs 600–900 kr/time. På et bad koster rørlegger 40 000–80 000 kr mens elektriker koster 15 000–35 000 kr. Rørleggerarbeid er mer omfattende og har høyere risiko (vannskader)." },
@@ -119,7 +119,7 @@ export default function Page() {
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">5 vanlige feil folk gjør med elektrikeren</h2>
           <div className="space-y-4 my-6">
             {[
-              {t:"Bestiller én og én jobb",d:"Oppstartsgebyr på 500–1 500 kr hver gang. Samle alt i én bestilling og spar 2 000–5 000 kr."},
+              {t:"Bestiller en og en jobb",d:"Oppstartsgebyr på 500–1 500 kr hver gang. Samle alt i en bestilling og spar 2 000–5 000 kr."},
               {t:"Velger billigste tilbud blindt",d:"Billigst er sjelden best. Sjekk hva som er inkludert, og om materialkvaliteten er god nok."},
               {t:"Glemmer å be om samsvarserklæring",d:"Uten samsvarserklæring får du problemer ved salg av bolig og med forsikring. Krev den alltid."},
               {t:"Utsetter sikringstavle-oppgradering",d:"Gamle skrusikringer er brannfarlige. 25 % av boligbranner skyldes elektriske feil."},
@@ -151,7 +151,7 @@ export default function Page() {
           {/* Sparetips */}
           <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Slik sparer du penger på elektriker</h2>
           <div className="space-y-3 text-text-secondary mb-6">
-            <p><strong className="text-text-primary">Samle jobber i én bestilling.</strong> Oppstartsgebyr på 500–1 500 kr betaler du kun én gang. Tre småjobber hver for seg: 4 500 kr i oppstart. Samlet: 1 500 kr.</p>
+            <p><strong className="text-text-primary">Samle jobber i en bestilling.</strong> Oppstartsgebyr på 500–1 500 kr betaler du kun en gang. Tre småjobber hver for seg: 4 500 kr i oppstart. Samlet: 1 500 kr.</p>
             <p><strong className="text-text-primary">Bestill i rolig sesong.</strong> Januar–mars har kortest ventetid og lavest priser. Unngå høst-rushet (sept–nov).</p>
             <p><strong className="text-text-primary">Forbered før elektrikeren kommer.</strong> Flytt møbler fra vegger, gi fri tilgang til sikringstavle, rydd der det skal jobbes. Elektrikerens tid er dyr — ikke betal for rydding.</p>
             <p><strong className="text-text-primary">Innhent 3 tilbud.</strong> Prisforskjellen kan være 20–30 % for samme jobb. Sammenlign hva som er inkludert, ikke bare totalsummen.</p>

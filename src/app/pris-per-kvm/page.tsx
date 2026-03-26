@@ -28,7 +28,7 @@ export default function Page() {
     <main className="pt-20"><BreadcrumbSchema items={[{name:"Hjem",href:"/"},{name:"Pris per m²",href:"/pris-per-kvm"}]} /><ArticleSchema title="Pris per m²" description="Komplett m² prisoversikt." slug="pris-per-kvm" /><FAQSchema items={faq} /><article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-14"><FadeInUp>
       <nav className="text-sm text-text-muted mb-6"><Link href="/" className="hover:text-accent-yellow">Hjem</Link> / <span className="text-text-secondary">Pris per m²</span></nav>
       <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-text-primary mb-4">Pris per m² for alle byggeprosjekter</h1>
-      <p className="text-lg text-text-secondary mb-8">M² prisen varierer enormt basert på prosjekttype, fra 80 kr per m² for innvendig maling til 80 000 kr per m² for luksuriøst bad. Her er en komplett oversikt som hjelper deg å budsjettere riktig.</p>
+      <p className="text-lg text-text-secondary mb-8">M² prisen varierer enormt basert på prosjekttype, fra 80 kr per m² for innvendig maling til 80 000 kr per m² for luksus bad. Her er en komplett oversikt som hjelper deg å budsjettere riktig.</p>
       <h2 className="font-display font-bold text-2xl text-text-primary mt-10 mb-4">Komplett m² prisoversikt</h2>
       <div className="bg-bg-card border border-surface-border rounded-2xl overflow-hidden my-6">
         <table className="w-full text-sm"><thead><tr className="text-left text-xs text-text-muted uppercase tracking-wider border-b border-surface-border"><th className="px-5 py-3">Prosjekttype</th><th className="px-5 py-3">Lav</th><th className="px-5 py-3">Normal</th><th className="px-5 py-3">Høy</th></tr></thead>

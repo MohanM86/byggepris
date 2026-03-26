@@ -141,7 +141,7 @@ export default function Page() {
             <p><strong className="text-text-primary">Behold rørplassering.</strong> Å flytte rør koster 20 000–50 000 kr ekstra. Behold toalett, servant og dusj på eksisterende plass så langt det går.</p>
             <p><strong className="text-text-primary">Riv badet selv.</strong> Spar 15 000–30 000 kr ved å rive gammelt bad, fjerne fliser og kjøre avfall. Steng av vann og strøm først.</p>
             <p><strong className="text-text-primary">Kjøp sanitær selv.</strong> Du kan spare 20–40 % på toalett, servant og blandebatteri ved å handle direkte. Avklar tilkoblingsmålene med rørlegger først.</p>
-            <p><strong className="text-text-primary">Samle alt i én bestilling.</strong> Oppstart på 500–1 500 kr betaler du bare én gang. Gjør bad, kjøkken og vaskerom samtidig.</p>
+            <p><strong className="text-text-primary">Samle alt i en bestilling.</strong> Oppstart på 500–1 500 kr betaler du bare en gang. Gjør bad, kjøkken og vaskerom samtidig.</p>
             <p><strong className="text-text-primary">Planlegg rørlegging ved oppussing.</strong> Når veggene allerede er åpne er rørarbeid mye billigere. Ettermontering i ferdig vegg kan koste dobbelt.</p>
             <p><strong className="text-text-primary">Bestill i rolig sesong.</strong> Januar–mars gir kortere ventetid og ofte bedre priser enn høsten.</p>
           </div>

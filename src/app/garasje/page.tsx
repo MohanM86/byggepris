@@ -15,7 +15,7 @@ const faq = [
   { question: "Hva koster grunnarbeid til garasje?", answer: "Grunnarbeid for garasje koster typisk 50 000-150 000 kr, avhengig av grunnforhold. Planering og graving 20 000-50 000 kr, støpt plate 30 000-60 000 kr, drenering 15 000-30 000 kr." },
   { question: "Hva koster en uisolert garasje?", answer: "En uisolert garasje koster typisk 200 000-500 000 kr for enkeltgarasje (ca. 25 m²). Ferdiggarasje i tre er rimeligst. Uisolert garasje er 30-40% billigere enn isolert, men kan ikke brukes som verksted i kulde." },
   { question: "Hva koster det å sette opp en dobbel garasje?", answer: "En dobbeltgarasje (40-50 m²) koster typisk 600 000-1 400 000 kr. Ferdiggarasje fra 300 000-600 000 kr. Stedsbygd isolert fra 800 000-1 200 000 kr. Murgarasje fra 1 000 000-1 800 000 kr." },
-  { question: "Hvor stor er en enkelt garasje?", answer: "Standard enkeltgarasje er 3,5-4 m bred og 6-7 m lang, altså ca. 22-28 m². Minimumsanbefaling for komfortabel bruk med én bil er 3,5 x 6 m (21 m²). Med lagringsplass langs veggen bør du ha minst 4 x 7 m (28 m²)." },
+  { question: "Hvor stor er en enkelt garasje?", answer: "Standard enkeltgarasje er 3,5-4 m bred og 6-7 m lang, altså ca. 22-28 m². Minimumsanbefaling for komfortabel bruk med en bil er 3,5 x 6 m (21 m²). Med lagringsplass langs veggen bør du ha minst 4 x 7 m (28 m²)." },
   { question: "Hva koster en carport?", answer: "En carport koster typisk 80 000-200 000 kr for enkel bilplass og 150 000-350 000 kr for dobbel. Carport er det rimeligste alternativet fordi det ikke har vegger, noe som sparer materialer og arbeid. Beskytter mot nedbør men ikke kulde." },
 ];
 

@@ -10,7 +10,7 @@ const faq = [
   { question: "Gjør bygningsformen stor prisforskjell?", answer: "Ja, enormt. Et rektangulært hus med enkel takvinkel er 15–25 % billigere enn et hus med mange hjørner, arker og takoppbygg. Hvert ekstra hjørne koster penger i materialer og arbeidstimer." },
   { question: "Hvor mye dyrere er høy standard?", answer: "Høy standard koster typisk 50–80 % mer enn enkel. Enkel koster 25 000 kr per m², normal 37 000 kr per m² og høy 50 000 kr per m². Forskjellen ligger i materialer, bad og kjøkken kvalitet." },
   { question: "Påvirker grunnforhold prisen mye?", answer: "Ja. Enkel grunn med sand og grus gir minimalt tillegg. Fjell som må sprenges koster 100 000–400 000 kr ekstra. Kvikkleire som krever pæling koster 200 000–800 000 kr ekstra." },
-  { question: "Er totalentreprise dyrere enn delt?", answer: "Ja, totalentreprise koster typisk 5–10 % mer fordi hovedentreprenøren tar påslag for koordinering og risiko. Men du får én kontaktperson, én kontrakt og mer forutsigbar pris." },
+  { question: "Er totalentreprise dyrere enn delt?", answer: "Ja, totalentreprise koster typisk 5–10 % mer fordi hovedentreprenøren tar påslag for koordinering og risiko. Men du får en kontaktperson, en kontrakt og mer forutsigbar pris." },
   { question: "Påvirker sesong byggekostnaden?", answer: "Ja, vinter gir typisk 5–10 % lavere håndverkerpriser fordi det er roligere periode. Ulempen er at utvendig arbeid er vanskeligere. For innvendig arbeid er vinter en god tid å bygge." },
   { question: "Hvor mye koster uforutsette utgifter?", answer: "Budsjetter 10–15 % buffer for nybygg og 15–20 % for renovering av eldre boliger. De vanligste overraskelsene er dårlige grunnforhold, skjulte fuktskader og endringer underveis." },
   { question: "Påvirker energikrav prisen?", answer: "TEK17 krav øker byggekostnaden med ca. 5–10 % men gir 50–70 % lavere energiforbruk over boligens levetid. Over 20 år sparer du typisk 300 000–600 000 kr i strøm." },
@@ -31,7 +31,7 @@ export default function Page() {
       <p className="text-lg text-text-secondary mb-8">Byggekostnaden påvirkes av mange faktorer som til sammen kan gjøre forskjellen mellom 3 og 8 millioner for tilsynelatende like prosjekter. De viktigste er standard, beliggenhet, bygningsform, grunnforhold og entrepriseform.</p>
       <div className="space-y-4 my-6">
         {[
-          {t:"Standard og materialvalg",p:"Kan doble m² prisen",d:"Enkel standard koster 25 000 kr per m² mens luksuriøs koster 65 000 kr pluss. Bad og kjøkken er rommene der standardvalget påvirker mest."},
+          {t:"Standard og materialvalg",p:"Kan doble m² prisen",d:"Enkel standard koster 25 000 kr per m² mens luksus koster 65 000 kr pluss. Bad og kjøkken er rommene der standardvalget påvirker mest."},
           {t:"Beliggenhet",p:"Oslo +10–15 % over snittet",d:"Lønnskostnader for håndverkere varierer mellom regioner. Oslo er dyrest og Sørlandet og Midt Norge rimeligst."},
           {t:"Bygningsform",p:"Enkel form sparer 15–25 %",d:"Rektangulært grunnriss med standard takvinkel er billigst. Hvert ekstra hjørne, ark og balkong øker kostnaden."},
           {t:"Grunnforhold",p:"+100 000 til +800 000 kr",d:"Sand og grus er billigst å bygge på. Fjell krever sprengning og leire kan kreve pæling. Alltid gjør geoteknisk undersøkelse først."},

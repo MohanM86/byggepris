@@ -37,7 +37,7 @@ export default function Byggepriser() {
           <nav className="text-sm text-text-muted mb-6"><Link href="/" className="hover:text-accent-yellow">Hjem</Link> / <span className="text-text-secondary">Byggepriser</span></nav>
           <h1 className="font-display font-extrabold text-4xl lg:text-display-md text-text-primary mb-4">Byggepriser i Norge</h1>
           <p className="text-lg text-text-secondary max-w-3xl mb-4">
-            Byggepriser i Norge varierer fra 8 000 kr per m² for enkel oppussing til over 80 000 kr per m² for luksuriøst bad. Gjennomsnittlig m²-pris for nybygg er 35 000-40 000 kr med normal standard. Her finner du en komplett oversikt over hva ulike byggeprosjekter koster.
+            Byggepriser i Norge varierer fra 8 000 kr per m² for enkel oppussing til over 80 000 kr per m² for luksus bad. Gjennomsnittlig m²-pris for nybygg er 35 000-40 000 kr med normal standard. Her finner du en komplett oversikt over hva ulike byggeprosjekter koster.
           </p>
           <p className="text-text-secondary max-w-3xl mb-4">
             De viktigste faktorene som påvirker prisen er prosjekttype, standard, beliggenhet og kompleksitet. Oslo er typisk 10-15% dyrere enn landsgjennomsnittet. Ferdighus er 15-25% rimeligere enn arkitekttegnet.
